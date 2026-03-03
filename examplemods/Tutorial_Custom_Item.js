@@ -1,10 +1,10 @@
 (function CustomItemMod() {
     const itemTexture = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAKZJREFUOE9j/P//PxMDBIBoEP6HREOl4PLIciA2AyPIgMcM//7KgvWSDJjBBpx9/+YvJzc3Sbq12DhB6sEGsJ19/+YnmQawYhigzc7FcPXnN4KugbqAHWQAy9n3b34T4wJkw6EGYLqAoNVQBWS5ANlwZBfAvUCs/0EGkW0AzBKqGoCSDgh5A80F2KMRpAgfAKUT6kcjsfEPUycmKMQgy8AETkgUZWcAS3CPIf4oSPsAAAAASUVORK5CYII=";
 
-    ModAPI.meta.title("Custom Item Mod");
+    ModAPI.meta.title("The Glock");
     ModAPI.meta.icon(itemTexture);
-    ModAPI.meta.description("it's a custom item. what more do you want");
-    ModAPI.meta.credits("By <author_name>");
+    ModAPI.meta.description("its a Glock");
+    ModAPI.meta.credits("By Jayden Hills");
 
     function CustomItem() {
         var creativeMiscTab = ModAPI.reflect.getClassById("net.minecraft.creativetab.CreativeTabs").staticVariables.tabMisc; //chuck it in the miscellaneous category ig
@@ -87,7 +87,7 @@
                 }
             }
         ));
-        AsyncSink.setFile("resourcepacks/AsyncSinkLib/assets/minecraft/textures/items/custom_item.png", await (await fetch(
+        AsyncSink.setFile("https://pngimg.com/d/glock_PNG4.png", await (await fetch(
             itemTexture
         )).arrayBuffer());
     });
